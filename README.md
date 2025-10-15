@@ -1,4 +1,4 @@
-# Beauty Master Bot
+# Flash Telegram Bot
 
 Telegram бот для мастера по наращиванию ресниц с системой отзывов и управления расписанием.
 
