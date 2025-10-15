@@ -590,7 +590,6 @@ def process_review_with_rating(message):
     )
     client_menu(message)
 
-bot.polling(non_stop=True)
 # ==================== ЗАПУСК ПРИЛОЖЕНИЯ ====================
 def run_bot():
     """Запуск бота в зависимости от среды"""
