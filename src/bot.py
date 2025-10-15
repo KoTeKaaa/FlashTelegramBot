@@ -41,7 +41,6 @@ def validate_environment_variables():
 bot = telebot.TeleBot(token=TOKEN, threaded=True)
 app = Flask(__name__)
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 PRICE_DIR = "price_photo"
 os.makedirs(PRICE_DIR, exist_ok=True)
@@ -596,7 +595,6 @@ def process_review_with_rating(message):
 def run_bot():
     """Запуск бота в зависимости от среды"""
     print("🚀 Запуск бота...")
-    print(f"📁 Рабочая директория: {BASE_DIR}")
     print(f"🔑 Токен: {'✅' if TOKEN else '❌'}")
     print(f"🌐 Среда: {RAILWAY_ENVIRONMENT}")
     
@@ -606,7 +604,7 @@ def run_bot():
         return
     
     # Создаем необходимые директории
-    required_dirs = [PRICE_DIR, REVIEWS_DIR, FLASH_DIR, RECORDS_DIR, BACKUP_DIR]
+    required_dirs = [PRICE_DIR, REVIEWS_DIR, FLASH_DIR, RECORDS_DIR]
     for dir_path in required_dirs:
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
