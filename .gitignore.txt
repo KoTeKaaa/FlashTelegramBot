@@ -1,0 +1,105 @@
+# Telegram Bot .gitignore
+
+# Файлы с чувствительными данными
+.env
+.env.local
+.env.production
+secrets.py
+repository.py
+config.py
+
+# Файлы с отзывами и данными
+/reviews/
+/reviews.json
+/reviews_backup_*
+
+# Фото файлы
+/price_photo/
+/records/ 
+/welcome/
+
+# Папка для бэкапов (если она в корне)
+/backups/
+
+# Логи
+*.log
+logs/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Операционные системы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Миграции базы данных (если будут)
+migrations/
+
+# Файлы сессий
+*.session
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Файлы настроек
+setup.cfg
